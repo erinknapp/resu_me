@@ -17,8 +17,8 @@ const Navigation = () => {
         <div>
             
 {/* <!-- Header --> */}
-<header class="pt2 pb1 align--center">
-    <div class="container">
+<header className="pt2 pb1 align--center">
+    <div className="container">
         <p>Resume Generator</p>
         <h1 title="Camp Chippewa"><span ref={textRef}></span></h1>
     </div>
