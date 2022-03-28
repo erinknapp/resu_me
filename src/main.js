@@ -1,10 +1,16 @@
+import $ from 'jquery';
+
+var i;
+
+
+
 document.querySelector('#page').contentEditable = true;
 
-defaultTemplateVars = ["fontDroid", "caseNormal", "titleRuled", "ruleAbove", "imageShow", "rollShow", "course1", "tableShow", "edyearFirst", "experience1", "projects1"]
+let defaultTemplateVars = ["fontDroid", "caseNormal", "titleRuled", "ruleAbove", "imageShow", "rollShow", "course1", "tableShow", "edyearFirst", "experience1", "projects1"];
 
-$('.toggle-option').click(function() {
-    toggleType = $(this).attr('data-toggle');
-    toggleValue = $(this).attr('id');
+$('.toggle-option').on("click", function() {
+   let toggleType = $(this).attr('data-toggle');
+   let toggleValue = $(this).attr('id');
     if (!$(this).hasClass('multi-select')) {
         if (!$(this).hasClass('selected')) {
             $('.toggle-option', $(this).parent()).removeClass('selected');
@@ -20,18 +26,18 @@ $('.toggle-option').click(function() {
     }
 });
 
-$('input[name="sectionToggle"]').change(function() {
+$('input[name="sectionToggle"]').on("change", function() {
     toggleSection($(this).val(), $(this).is(':checked'));
 });
 
 
-function template(value) {
-    if (value == 'default') {
+export default function template(value) {
+    if (value === 'default') {
         $('#defaultTemplateBtn').removeClass('btn-default').addClass('btn-danger');
         $('#customTemplateBtn').removeClass('btn-danger').addClass('btn-default');
         $('#customTemplateOptions').hide();
         for (i = 0; i < defaultTemplateVars.length; i++)
-            $('#' + defaultTemplateVars[i]).click();
+            $('#' + defaultTemplateVars[i]).on("click");
     } else {
         $('#customTemplateBtn').removeClass('btn-default').addClass('btn-danger');
         $('#defaultTemplateBtn').removeClass('btn-danger').addClass('btn-default');
@@ -40,17 +46,17 @@ function template(value) {
 }
 
 function toggleSection(sectionName, toggleState) {
-    if (toggleState == true)
+    if (toggleState === true)
         $('input[value="' + sectionName + '"]').attr('checked', 'true');
     else
         $('input[value="' + sectionName + '"]').removeAttr('checked');
     $('#' + sectionName).toggle();
 }
 
-function changeTemplate(toggleType, toggleValue) {
+export function changeTemplate(toggleType, toggleValue) {
     switch (toggleType) {
         case 'minor':
-            if (toggleValue == 'minorShow') {
+            if (toggleValue === 'minorShow') {
                 $('#contentMinor').show();
                 $('#image_box').css('margin-top', '35px');
             } else {
@@ -59,12 +65,12 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'contact':
-            if (toggleValue == 'contact3') {
+            if (toggleValue === 'contact3') {
                 $('#contactLink1').hide();
                 $('#contactLink2').hide();
                 $('#contactlink5').hide();
                 $('#contactlink6').hide();
-            } else if (toggleValue == 'contact4') {
+            } else if (toggleValue === 'contact4') {
                 $('#contactLink1').show();
                 $('#contactLink2').hide();
                 $('#contactlink5').show();
@@ -75,62 +81,62 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'margin':
-            if (toggleValue == 'margin1')
+            if (toggleValue === 'margin1')
                 $('#page').css('padding', '0.2cm 1cm 1cm 1cm');
-            else if (toggleValue == 'margin2')
+            else if (toggleValue === 'margin2')
                 $('#page').css('padding', '0.2cm 1.1cm 1cm 1.1cm');
-            else if (toggleValue == 'margin3')
+            else if (toggleValue === 'margin3')
                 $('#page').css('padding', '0.2cm 1.2cm 1cm 1.2cm');
-            else if (toggleValue == 'margin4')
+            else if (toggleValue === 'margin4')
                 $('#page').css('padding', '0.2cm 1.3cm 1cm 1.3cm');
-            else if (toggleValue == 'margin5')
+            else if (toggleValue === 'margin5')
                 $('#page').css('padding', '0.2cm 1.4cm 1cm 1.4cm');
-            else if (toggleValue == 'margin6')
+            else if (toggleValue === 'margin6')
                 $('#page').css('padding', '0.2cm 1.5cm 1cm 1.5cm');
             break;
         case 'line':
-            if (toggleValue == 'line1')
+            if (toggleValue === 'line1')
                 $('#page').css('line-height', '1.1em');
-            else if (toggleValue == 'line2')
+            else if (toggleValue === 'line2')
                 $('#page').css('line-height', '1.2em');
-            else if (toggleValue == 'line3')
+            else if (toggleValue === 'line3')
                 $('#page').css('line-height', '1.3em');
-            else if (toggleValue == 'line4')
+            else if (toggleValue === 'line4')
                 $('#page').css('line-height', '1.4em');
-            else if (toggleValue == 'line5')
+            else if (toggleValue === 'line5')
                 $('#page').css('line-height', '1.5em');
-            else if (toggleValue == 'line6')
+            else if (toggleValue === 'line6')
                 $('#page').css('line-height', '1.6em');
             break;
         case 'column':
-            if (toggleValue == 'column1')
+            if (toggleValue === 'column1')
                 $('.table tbody tr td:nth-child(1)').toggleClass('text-center');
-            else if (toggleValue == 'column2')
+            else if (toggleValue === 'column2')
                 $('.table tbody tr td:nth-child(2)').toggleClass('text-center');
-            else if (toggleValue == 'column3')
+            else if (toggleValue === 'column3')
                 $('.table tbody tr td:nth-child(3)').toggleClass('text-center');
-            else if (toggleValue == 'column4')
+            else if (toggleValue === 'column4')
                 $('.table tbody tr td:nth-child(4)').toggleClass('text-center');
             break;
 
         case 'font':
-            if (toggleValue == 'fontVerdanaSans')
+            if (toggleValue === 'fontVerdanaSans')
                 $('#page').removeClass('droid').removeClass('roboto').removeClass('verdana-serif').addClass('verdana-sans');
-            else if (toggleValue == 'fontVerdanaSerif')
+            else if (toggleValue === 'fontVerdanaSerif')
                 $('#page').removeClass('verdana-sans').removeClass('droid').removeClass('roboto').addClass('verdana-serif');
-            else if (toggleValue == 'fontRoboto')
+            else if (toggleValue === 'fontRoboto')
                 $('#page').removeClass('verdana-serif').removeClass('verdana-sans').removeClass('droid').addClass('roboto');
-            else if (toggleValue == 'fontDroid')
+            else if (toggleValue === 'fontDroid')
                 $('#page').removeClass('roboto').removeClass('verdana-serif').removeClass('verdana-sans').addClass('droid');
             break;
         case 'case':
-            if (toggleValue == 'caseNormal')
+            if (toggleValue === 'caseNormal')
                 $('.section-title').removeClass('uppercase');
             else
                 $('.section-title').addClass('uppercase');
             break;
         case 'title':
-            if (toggleValue == 'titleRuled') {
+            if (toggleValue === 'titleRuled') {
                 $('.section-title').removeClass('shaded');
                 $('.section-title').addClass('ruled');
             } else {
@@ -139,7 +145,7 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'rule':
-            if (toggleValue == 'ruleAbove') {
+            if (toggleValue === 'ruleAbove') {
                 $('.section-title').removeClass('rule-below');
                 $('.section-title').addClass('rule-above');
             } else {
@@ -149,7 +155,7 @@ function changeTemplate(toggleType, toggleValue) {
             break;
 
         case 'image':
-            if (toggleValue == 'imageShow') {
+            if (toggleValue === 'imageShow') {
                 $('#image_box').show();
                 $('#info').css('margin-left', '0px');
             } else {
@@ -158,7 +164,7 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'roll':
-            if (toggleValue == 'rollShow') {
+            if (toggleValue === 'rollShow') {
                 $('#contentRoll').show();
                 $('#info').css('margin-top', '0px');
             } else {
@@ -167,7 +173,7 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'course':
-            if (toggleValue == 'course1') {
+            if (toggleValue === 'course1') {
                 $('#contentBranch').hide();
                 $('#contentCourse').text('B.Tech - ' + $('#contentBranch').text());
             } else {
@@ -176,7 +182,7 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'table':
-            if (toggleValue == 'tableShow') {
+            if (toggleValue === 'tableShow') {
                 $('#educationTable').removeClass('borderless');
                 $('#educationTable').addClass('customBordered');
             } else {
@@ -185,7 +191,7 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'edyear':
-            if (toggleValue == 'edyearFirst') {
+            if (toggleValue === 'edyearFirst') {
                 $("#educationTable tr").each(function() {
                     $(this).find("td").eq(0).before($(this).find("td").eq(3));
                 });
@@ -206,7 +212,7 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'experience':
-            if (toggleValue == 'experience1') {
+            if (toggleValue === 'experience1') {
                 $("#sectionExperience .title , #sectionExperience .time").css('display', 'inline-block');
                 $("#sectionExperience .time").addClass('right').removeClass('tab');
                 $("#sectionExperience .link").show();
@@ -217,7 +223,7 @@ function changeTemplate(toggleType, toggleValue) {
             }
             break;
         case 'projects':
-            if (toggleValue == 'projects1') {
+            if (toggleValue === 'projects1') {
                 $("#sectionProjects .title , #sectionProjects .time").css('display', 'inline-block');
                 $("#sectionProjects .time").addClass('right').removeClass('tab');
                 $("#sectionProjects .mentor , #sectionProjects .link").show();
@@ -230,8 +236,8 @@ function changeTemplate(toggleType, toggleValue) {
     }
 }
 
-function insertList() {
-    node = getSelectionContainerElement();
+export function insertList() {
+    let node = getSelectionContainerElement();
     var ul = document.createElement("ul");
     ul.className = 'decimal';
     ul.style.marginLeft = '0px';
@@ -239,23 +245,23 @@ function insertList() {
     insertAfter(node, ul);
 }
 
-function decreaseIndent() {
-    node = getSelectionContainerElement();
-    while (node.tagName != 'UL')
+export function decreaseIndent() {
+   let  node = getSelectionContainerElement();
+    while (node.tagName !== 'UL')
         node = node.parentNode;
     node.style.paddingLeft = parseInt(window.getComputedStyle(node).getPropertyValue("padding-left")) - 5;
 }
 
-function increaseIndent() {
-    node = getSelectionContainerElement();
-    while (node.tagName != 'UL')
+export function increaseIndent() {
+   let node = getSelectionContainerElement();
+    while (node.tagName !== 'UL')
         node = node.parentNode;
     node.style.paddingLeft = parseInt(window.getComputedStyle(node).getPropertyValue("padding-left")) + 5;
 }
 
-function changeListStyle(value) {
-    node = getSelectionContainerElement();
-    while (node.tagName != 'UL')
+export function changeListStyle(value) {
+    let node = getSelectionContainerElement();
+    while (node.tagName !== 'UL')
         node = node.parentNode;
     node.className = value;
 
@@ -295,3 +301,7 @@ function getSelectionContainerElement() {
 function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
+
+
+
+

@@ -1,7 +1,12 @@
 import React from 'react';
-// import "src/main.js";
-// import "src/jquery.min.js";
-// import "src/bootstrap.min.js";
+import template from '../main.js';
+import changeListStyle from '../main.js';
+import insertList from '../main.js';
+import decreaseIndent from '../main.js';
+import increaseIndent from '../main.js';
+
+
+
 
 const Pro = () => {
     return (
@@ -13,13 +18,13 @@ const Pro = () => {
                 <div className="row">
                     <div className="col-sm-3 no-print" id="left">
                         <div id="panel">
-                            <h3 className="text-center" data-toggle="modal">Resume</h3>
+                            <h3 className="text-center" data-toggle="modal">Resu_me</h3>
                             {/* <!--   <button className="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button> --> */}
                             <button className="btn btn-block btn-success" onClick={() => window.print()}>CREATE PDF</button>
 
                             <hr />
 
-                            <h4 className="text-center">Template settings</h4>
+                            <h4 className="text-center">Template Settings</h4>
                             <button id="defaultTemplateBtn" className="btn btn-block btn-danger" onClick={() => template('default')}>Use Resu_me² template</button>
                             <button id="customTemplateBtn" className="btn btn-block btn-default" onClick={() => template('custom')}>Use custom template</button>
                             <h5>
@@ -30,7 +35,7 @@ const Pro = () => {
                                 </div>
                             </h5>
                             <h5>
-                                Contact lines
+                                Contact Lines
                                 <div className="toggle-button">
                                     <div className="toggle-option" data-toggle="contact" id="contact3">2</div>
                                     <div className="toggle-option selected" data-toggle="contact" id="contact4">3</div>
@@ -38,7 +43,7 @@ const Pro = () => {
                                 </div>
                             </h5>
                             <h5>
-                                Horizontal margin
+                                Horizontal Margin
                                 <div className="toggle-button">
                                     <div className="toggle-option" data-toggle="margin" id="margin1">1</div>
                                     <div className="toggle-option" data-toggle="margin" id="margin2">2</div>
@@ -49,7 +54,7 @@ const Pro = () => {
                                 </div>
                             </h5>
                             <h5>
-                                Line spacing
+                                Line Spacing
                                 <div className="toggle-button">
                                     <div className="toggle-option" data-toggle="line" id="line1">1</div>
                                     <div className="toggle-option" data-toggle="line" id="line2">2</div>
@@ -60,7 +65,7 @@ const Pro = () => {
                                 </div>
                             </h5>
                             <h5>
-                                Center column no.
+                                Center Column no.
                                 <div className="toggle-button">
                                     <div className="toggle-option multi-select" data-toggle="column" id="column1">1</div>
                                     <div className="toggle-option multi-select" data-toggle="column" id="column2">2</div>
@@ -73,7 +78,7 @@ const Pro = () => {
 
                             <div id="customTemplateOptions">
                                 <h5>
-                                    Font type
+                                    Font Type
                                     <div className="toggle-button">
                                         <div className="toggle-option" data-toggle="font" id="fontVerdanaSans">1</div>
                                         <div className="toggle-option" data-toggle="font" id="fontMonospace">2</div>
@@ -82,21 +87,21 @@ const Pro = () => {
                                     </div>
                                 </h5>
                                 <h5>
-                                    Title case
+                                    Title Case
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="case" id="caseNormal">Default</div>
                                         <div className="toggle-option" data-toggle="case" id="caseUpper">Uppercase</div>
                                     </div>
                                 </h5>
                                 <h5>
-                                    Title style
+                                    Title Style
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="title" id="titleRuled">Ruled</div>
                                         <div className="toggle-option" data-toggle="title" id="titleShaded">Shaded</div>
                                     </div>
                                 </h5>
                                 <h5>
-                                    Title rule position
+                                    Title Rule Position
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="rule" id="ruleAbove">Above title</div>
                                         <div className="toggle-option" data-toggle="rule" id="ruleBelow">Below title</div>
@@ -111,7 +116,7 @@ const Pro = () => {
                                     </div>
                                 </h5>
                                 <h5>
-                                    Roll No
+                                    Roll No.
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="roll" id="rollShow">Show</div>
                                         <div className="toggle-option" data-toggle="roll" id="rollHide">Hide</div>
@@ -125,28 +130,28 @@ const Pro = () => {
                                     </div>
                                 </h5>
                                 <h5>
-                                    Table border
+                                    Table Border
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="table" id="tableShow">Show</div>
                                         <div className="toggle-option" data-toggle="table" id="tableHide">Hide</div>
                                     </div>
                                 </h5>
                                 <h5>
-                                    Education year column
+                                    Education Year Column
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="edyear" id="edyearFirst">First</div>
                                         <div className="toggle-option" data-toggle="edyear" id="edyearLat">Last</div>
                                     </div>
                                 </h5>
                                 <h5>
-                                    Experience layout
+                                    Experience Layout
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="experience" id="experience1">L1</div>
                                         <div className="toggle-option" data-toggle="experience" id="experience2">L2</div>
                                     </div>
                                 </h5>
                                 <h5>
-                                    Projects layout
+                                    Projects Layout
                                     <div className="toggle-button">
                                         <div className="toggle-option selected" data-toggle="projects" id="projects1">L1</div>
                                         <div className="toggle-option" data-toggle="projects" id="projects2">L2</div>
@@ -161,12 +166,12 @@ const Pro = () => {
 
                             <hr />
 
-                            <h4 className="text-center">Lists and points</h4>
+                            <h4 className="text-center">Lists and Points</h4>
                             <button className="btn btn-block btn-xs btn-success" onClick={insertList}>+ Insert sub-list</button>
                             <button className="btn btn-block btn-xs btn-warning" onClick={decreaseIndent}>&lt;&lt; Decrese indentation</button>
                             <button className="btn btn-block btn-xs btn-warning" onClick={increaseIndent}>&gt;&gt; Increase indentation</button>
                             <h5>
-                                List style :
+                                List Style :
                                 <div className="toggle-button">
                                     <button className="btn btn-xs custom-button" onClick={() => changeListStyle('disc')}>&#9899;</button>
                                     <button className="btn btn-xs custom-button" onClick={() => changeListStyle('circle')}>&#9898;</button>
@@ -195,11 +200,11 @@ const Pro = () => {
                                         <p id="contentName" style="font-family: 'Arial'; font-size: 60px;">Abc xyz</p>
                                     </div>
                                     <div id="contact">
-                                        <p>xyz.xyz@gmail.com | +91-9999999999 | abc.github.io</p>
-                                        <p style="margin-top:-10px"><span id="contactLink2">Github://abcxyz  | </span>
-                                            <span id="contactLink1">Linkedln://xyzabc | </span>
-                                            <span id="contactlink5">CodeChef://absnx | </span>
-                                            <span id="contactlink6">HackerRank://absnxy</span></p>
+                                        <p>Your@email.com | (123)456-7890 | your.website.com</p>
+                                        <p style="margin-top:-10px"><span id="contactLink2">Github://yourgithub  | </span>
+                                            <span id="contactLink1">Linkedln://yourlinkedin | </span>
+                                            <span id="contactlink5">CodeChef://yourcodechef | </span>
+                                            <span id="contactlink6">HackerRank://yourrank</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -221,22 +226,22 @@ const Pro = () => {
                                                 <td className="header"><strong>CGPA/Percentage</strong></td>
                                             </tr>
                                             <tr>
-                                                <td>2015 - Present</td>
-                                                <td>B.Tech</td>
-                                                <td>National Institute of Technology, Warangal</td>
-                                                <td>9.00 (Current)</td>
+                                                <td>year - Present</td>
+                                                <td>Couse/Degree</td>
+                                                <td>University/College/School</td>
+                                                <td>GPA</td>
                                             </tr>
                                             <tr>
-                                                <td>2015</td>
-                                                <td>Senior secondary</td>
-                                                <td>CBSE board</td>
-                                                <td>97.0%</td>
+                                                <td>Year</td>
+                                                <td>Couse/Degree/Certification</td>
+                                                <td>University/College/School</td>
+                                                <td>Grade</td>
                                             </tr>
                                             <tr>
-                                                <td>2013</td>
-                                                <td>Secondary</td>
-                                                <td>CBSE board</td>
-                                                <td>10.0</td>
+                                                <td>Year</td>
+                                                <td>Couse/Degree/Certification</td>
+                                                <td>University/College/School</td>
+                                                <td>Grade/GPA</td>
                                             </tr>
                                         </table>
                                     </li>
@@ -253,22 +258,22 @@ const Pro = () => {
                                 <ul>
                                     <li>
                                         <div>
-                                            <div className="title">XYZ Engineer at 'ABC'</div>
-                                            <div className="time right">May 2016 - July 2016</div>
+                                            <div className="title">Title</div>
+                                            <div className="time right">Start Date - End Date / (Present)</div>
                                         </div>
                                         <div>
-                                            <div className="link right">www.abc.in</div>
-                                            <div className="text">Analysed app usage statistics to recommend items based on user's preference.</div>
+                                            <div className="link right">www.business.wesite.com</div>
+                                            <div className="text">Description of role.</div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <div className="title">XYZ Engineer at 'ABC'</div>
-                                            <div className="time right">Dec 2015</div>
+                                            <div className="title">Title</div>
+                                            <div className="time right">Start Date - End Date / (Present)</div>
                                         </div>
                                         <div>
-                                            <div className="link right">www.abc.in</div>
-                                            <div className="text">Designed methods to improve the existing unit test mechanism.</div>
+                                            <div className="link right">www.business.wesite.com</div>
+                                            <div className="text">Description of role.</div>
                                         </div>
                                     </li>
                                 </ul>
@@ -284,20 +289,20 @@ const Pro = () => {
                                 <ul>
                                     <li>
                                         <div>
-                                            <div className="title">Advanced analysis of damping motion</div>
-                                            <div className="time right">PCES 2010</div>
+                                            <div className="title">Title Of Publication</div>
+                                            <div className="time right">Place/Date</div>
                                         </div>
                                         <div>
-                                            <div className="mentor">Mentors</div>
+                                            <div className="mentor">Mentors - </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div>
-                                            <div className="title">Efficient ranking of search results</div>
-                                            <div className="time right">LOCS 2010</div>
+                                            <div className="title">Title of Publication</div>
+                                            <div className="time right">Place/Date</div>
                                         </div>
                                         <div>
-                                            <div className="mentor">Mentors</div>
+                                            <div className="mentor">Mentors - </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -577,10 +582,11 @@ const Pro = () => {
             </div>
 
 
-            <script type="text/javascript" src="src/jquery.min.js"></script>
-            <script type="text/javascript" src="src/bootstrap.min.js"></script>
-            <script type="text/javascript" src="src/main.js"></script>
+
         </body>
+
+
+
 
     );
 }
