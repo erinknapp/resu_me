@@ -1,18 +1,21 @@
 import React from 'react';
-import template from '../main.js';
-import changeListStyle from '../main.js';
-import insertList from '../main.js';
-import decreaseIndent from '../main.js';
-import increaseIndent from '../main.js';
-
-
-
+import {
+    template,
+    changeListStyle,
+    insertList,
+    decreaseIndent,
+    increaseIndent
+} from '../main.js';
+import '../Bootstrap.min.css';
+import '../style.css';
+import '../App.css';
+import '../main.js';
 
 const Pro = () => {
     return (
 
+        <>
 
-        <body>
 
             <div className="container-fluid">
                 <div className="row">
@@ -24,7 +27,7 @@ const Pro = () => {
 
                             <hr />
 
-                            <h4 className="text-center">Template Settings</h4>
+                            <h4 className="text-center">input</h4>
                             <button id="defaultTemplateBtn" className="btn btn-block btn-danger" onClick={() => template('default')}>Use Resu_me² template</button>
                             <button id="customTemplateBtn" className="btn btn-block btn-default" onClick={() => template('custom')}>Use custom template</button>
                             <h5>
@@ -194,14 +197,14 @@ const Pro = () => {
 
                         <div id="page" className="droid">
 
-                            <div className="row" style="margin-bottom:10px;">
+                            <div className="row" id="margin-botton10px">
                                 <div className="col-sm-12">
-                                    <div id="info" style="text-align: center; padding-top:40px; padding-bottom: 15px;">
-                                        <p id="contentName" style="font-family: 'Arial'; font-size: 60px;">Abc xyz</p>
+                                    <div id="info" className="infoalign">
+                                        <p id="contentName" className="idfont">Abc xyz</p>
                                     </div>
                                     <div id="contact">
-                                        <p>Your@email.com | (123)456-7890 | your.website.com</p>
-                                        <p style="margin-top:-10px"><span id="contactLink2">Github://yourgithub  | </span>
+                                        <p><input placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
+                                        <p id="margintop"><span id="contactLink2">Github://yourgithub  | </span>
                                             <span id="contactLink1">Linkedln://yourlinkedin | </span>
                                             <span id="contactlink5">CodeChef://yourcodechef | </span>
                                             <span id="contactlink6">HackerRank://yourrank</span></p>
@@ -219,30 +222,38 @@ const Pro = () => {
                                 <ul className="nobullet">
                                     <li>
                                         <table className="table customBordered" id="educationTable">
-                                            <tr>
-                                                <td className="header"><strong>Year</strong></td>
-                                                <td className="header"><strong>Degree / Certificate</strong></td>
-                                                <td className="header"><strong>Institute / Board</strong></td>
-                                                <td className="header"><strong>CGPA/Percentage</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td>year - Present</td>
-                                                <td>Couse/Degree</td>
-                                                <td>University/College/School</td>
-                                                <td>GPA</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Year</td>
-                                                <td>Couse/Degree/Certification</td>
-                                                <td>University/College/School</td>
-                                                <td>Grade</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Year</td>
-                                                <td>Couse/Degree/Certification</td>
-                                                <td>University/College/School</td>
-                                                <td>Grade/GPA</td>
-                                            </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td className="header"><strong>Year</strong></td>
+                                                    <td className="header"><strong>Degree / Certificate</strong></td>
+                                                    <td className="header"><strong>Institute / Board</strong></td>
+                                                    <td className="header"><strong>CGPA/Percentage</strong></td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>year - Present</td>
+                                                    <td>Couse/Degree</td>
+                                                    <td>University/College/School</td>
+                                                    <td>GPA</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Year</td>
+                                                    <td>Couse/Degree/Certification</td>
+                                                    <td>University/College/School</td>
+                                                    <td>Grade</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Year</td>
+                                                    <td>Couse/Degree/Certification</td>
+                                                    <td>University/College/School</td>
+                                                    <td>Grade/GPA</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </li>
                                 </ul>
@@ -560,21 +571,21 @@ const Pro = () => {
             </div>
 
 
-            <div className="modal fade" id="sectionToggleModal" tabindex='-1'>
+            <div className="modal fade" id="sectionToggleModal" tabIndex='-1'>
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-body">
                             <button type="button" className="close" data-dismiss="modal">&times;</button>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionEducation" />Education</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionExperience" />Experience</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionPublications" />Publications</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionProjects" />Projects</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionSkills" />Technical Skills</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionResponsibility" />Positions of Responsibility</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionAchievements" />Achievements</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCourses" />Key courses taken</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionlinks" />Links</label></div>
-                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" checked="true" value="sectionCurricular" />Hobbies</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionEducation" />Education</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionExperience" />Experience</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionPublications" />Publications</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionProjects" />Projects</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionSkills" />Technical Skills</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionResponsibility" />Positions of Responsibility</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionAchievements" />Achievements</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionCourses" />Key courses taken</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionlinks" />Links</label></div>
+                            <div className="checkbox"><label><input type="checkbox" name="sectionToggle" defaultChecked={true} value="sectionCurricular" />Hobbies</label></div>
                             <div className="checkbox"><label><input type="checkbox" name="sectionToggle" value="sectionFooterMessage" />References message</label></div>
                         </div>
                     </div>
@@ -583,8 +594,8 @@ const Pro = () => {
 
 
 
-        </body>
 
+        </>
 
 
 

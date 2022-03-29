@@ -1,4 +1,4 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
 
 html {
     line-height: 1.15;
@@ -258,7 +258,7 @@ ul {
     padding: 0
 }
 
-[tabindex='-1']:focus {
+[tabIndex='-1']:focus {
     outline: 0
 }
 
@@ -934,6 +934,22 @@ video {
 
 .offset-one-fifth {
     margin-left: 20%
+}
+
+#marginbotton10px{
+    margin-bottom: 10px;
+}
+
+.infoalign{
+    text-align: center; padding-top:40px; padding-bottom: 15px;
+}
+
+.infofont{
+    font-family: 'Arial'; font-size: 60px;
+}
+
+#margintop{
+    margin-top:-10px
 }
 
 .offset-two-fifths {

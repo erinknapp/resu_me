@@ -4,7 +4,7 @@ var i;
 
 
 
-document.querySelector('#page').contentEditable = true;
+// document.querySelector('#page').contentEditable = true;
 
 let defaultTemplateVars = ["fontDroid", "caseNormal", "titleRuled", "ruleAbove", "imageShow", "rollShow", "course1", "tableShow", "edyearFirst", "experience1", "projects1"];
 
@@ -31,7 +31,7 @@ $('input[name="sectionToggle"]').on("change", function() {
 });
 
 
-export default function template(value) {
+export function template(value) {
     if (value === 'default') {
         $('#defaultTemplateBtn').removeClass('btn-default').addClass('btn-danger');
         $('#customTemplateBtn').removeClass('btn-danger').addClass('btn-default');
@@ -195,7 +195,7 @@ export function changeTemplate(toggleType, toggleValue) {
                 $("#educationTable tr").each(function() {
                     $(this).find("td").eq(0).before($(this).find("td").eq(3));
                 });
-                var temp = document.getElementById('column4').className;
+                let temp = document.getElementById('column4').className;
                 document.getElementById('column4').className = document.getElementById('column3').className;
                 document.getElementById('column3').className = document.getElementById('column2').className;
                 document.getElementById('column2').className = document.getElementById('column1').className;
@@ -204,7 +204,7 @@ export function changeTemplate(toggleType, toggleValue) {
                 $("#educationTable tr").each(function() {
                     $(this).find("td").eq(3).after($(this).find("td").eq(0));
                 });
-                var temp = document.getElementById('column1').className;
+                let temp = document.getElementById('column1').className;
                 document.getElementById('column1').className = document.getElementById('column2').className;
                 document.getElementById('column2').className = document.getElementById('column3').className;
                 document.getElementById('column3').className = document.getElementById('column4').className;
@@ -233,6 +233,8 @@ export function changeTemplate(toggleType, toggleValue) {
                 $("#sectionProjects .mentor , #sectionProjects .link").hide();
             }
             break;
+            default:
+                console.error("No default case selected")
     }
 }
 
