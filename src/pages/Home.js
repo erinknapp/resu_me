@@ -1,4 +1,5 @@
 import React from 'react';
+import '../homepage.css';
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 
@@ -30,14 +31,14 @@ const Home = () => {
                         </div>
                         {/* <!-- LIGHT --> */}
                         <div className="grid-column span-half pt3 pb3 mobile-m order-4">
-                            <a href="light/index.html" style={{ textDecoration: 'none' }} target="_Blank">
+                            <a href="/light" style={{ textDecoration: 'none' }} target="_Blank">
                                 <h3>Resu_me - Light</h3>
                             </a>
                             <p>Resu_me - Light gives you a free, Simple and effective resume.</p>
                         </div>
                         <div className="grid-column span-half pt3 pb3 mobile-m order-3">
                             <div className="relative">
-                                <a href="light/index.html" target="_Blank"><img className="info-image relative z2" src="assets/light.png" alt="Teepee" /></a>
+                                <a href="/light" target="_Blank"><img className="info-image relative z2" src="assets/light.png" alt="Teepee" /></a>
                                 <div className="pattern pattern--right-middle absolute z1"></div>
                             </div>
                         </div>

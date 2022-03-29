@@ -10,6 +10,12 @@ body {
     line-height: 1em;
 }
 
+input {
+    background: transparent;
+    border: none;
+    font-size:1.3em; padding:.5em; 
+}
+
 #left * {
     color: #eee;
     font-family: 'Montserrat', sans-serif;

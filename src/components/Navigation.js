@@ -1,5 +1,8 @@
 import { init } from 'ityped';
 import React, { useEffect, useRef } from 'react';
+import '../homepage.css';
+
+
 
 const Navigation = () => {
     const textRef = useRef();

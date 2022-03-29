@@ -1,5 +1,4 @@
 
-
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -56,10 +55,6 @@ abbr[title] {
     text-decoration: underline;
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted
-}
-
-a h3 {
-    color: #000;
 }
 
 b,
@@ -258,7 +253,7 @@ ul {
     padding: 0
 }
 
-[tabIndex='-1']:focus {
+[tabindex='-1']:focus {
     outline: 0
 }
 
@@ -936,22 +931,6 @@ video {
     margin-left: 20%
 }
 
-#marginbotton10px{
-    margin-bottom: 10px;
-}
-
-.infoalign{
-    text-align: center; padding-top:40px; padding-bottom: 15px;
-}
-
-.infofont{
-    font-family: 'Arial'; font-size: 60px;
-}
-
-#margintop{
-    margin-top:-10px
-}
-
 .offset-two-fifths {
     margin-left: 40%
 }
@@ -1028,11 +1007,6 @@ video {
 .list--inline {
     font-size: 0
 }
-
-img.info-image:hover{
-    transform: scale(1.1);
-}
-
 
 .list--inline li {
     display: inline-block;

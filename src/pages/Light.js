@@ -31,7 +31,6 @@ const Pro = () => {
 
                             <h4 className="text-center">input</h4>
                             <button id="defaultTemplateBtn" className="btn btn-block btn-danger" onClick={() => template('default')}>Use Resu_me² template</button>
-                            <button id="customTemplateBtn" className="btn btn-block btn-default" onClick={() => template('custom')}>Use custom template</button>
                             <h5>
                                 Semester
                                 <div className="toggle-button">
@@ -81,90 +80,6 @@ const Pro = () => {
 
                             <br />
 
-                            <div id="customTemplateOptions">
-                                <h5>
-                                    Font Type
-                                    <div className="toggle-button">
-                                        <div className="toggle-option" data-toggle="font" id="fontVerdanaSans">1</div>
-                                        <div className="toggle-option" data-toggle="font" id="fontMonospace">2</div>
-                                        <div className="toggle-option" data-toggle="font" id="fontRoboto">3</div>
-                                        <div className="toggle-option selected" data-toggle="font" id="fontDroid">4</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Title Case
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="case" id="caseNormal">Default</div>
-                                        <div className="toggle-option" data-toggle="case" id="caseUpper">Uppercase</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Title Style
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="title" id="titleRuled">Ruled</div>
-                                        <div className="toggle-option" data-toggle="title" id="titleShaded">Shaded</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Title Rule Position
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="rule" id="ruleAbove">Above title</div>
-                                        <div className="toggle-option" data-toggle="rule" id="ruleBelow">Below title</div>
-                                    </div>
-                                </h5>
-                                <br />
-                                <h5>
-                                    Image
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="image" id="imageShow">Show</div>
-                                        <div className="toggle-option" data-toggle="image" id="imageHide">Hide</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Roll No.
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="roll" id="rollShow">Show</div>
-                                        <div className="toggle-option" data-toggle="roll" id="rollHide">Hide</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Course
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="course" id="course1">1 line</div>
-                                        <div className="toggle-option" data-toggle="course" id="course2">2 lines</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Table Border
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="table" id="tableShow">Show</div>
-                                        <div className="toggle-option" data-toggle="table" id="tableHide">Hide</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Education Year Column
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="edyear" id="edyearFirst">First</div>
-                                        <div className="toggle-option" data-toggle="edyear" id="edyearLat">Last</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Experience Layout
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="experience" id="experience1">L1</div>
-                                        <div className="toggle-option" data-toggle="experience" id="experience2">L2</div>
-                                    </div>
-                                </h5>
-                                <h5>
-                                    Projects Layout
-                                    <div className="toggle-button">
-                                        <div className="toggle-option selected" data-toggle="projects" id="projects1">L1</div>
-                                        <div className="toggle-option" data-toggle="projects" id="projects2">L2</div>
-                                    </div>
-                                </h5>
-                                <br />
-                            </div>
-
                             <h5>
                                 <button className="btn btn-sm btn-block btn-primary" data-toggle="modal" data-target="#sectionToggleModal">Show/Hide sections</button>
                             </h5>
@@ -205,8 +120,8 @@ const Pro = () => {
                                         <p id="contentName" className="idfont">Abc xyz</p>
                                     </div>
                                     <div id="contact">
-                                        <p><input id="conteactinput" onkeyup="this.style.width = ((this.value.length + 1) * 5) + 'px';console.log(this.value.length);"  ng-model="questionButtons[$index].title" placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
-                                        <p id="margintop"><span id="contactLink2"><input id='github' placeholder='Github://yourgithub  |'></input>  </span>
+                                        <p><input placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
+                                        <p id="margintop"><span id="contactLink2">Github://yourgithub  | </span>
                                             <span id="contactLink1">Linkedln://yourlinkedin | </span>
                                             <span id="contactlink5">CodeChef://yourcodechef | </span>
                                             <span id="contactlink6">HackerRank://yourrank</span></p>
