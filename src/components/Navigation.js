@@ -18,10 +18,11 @@ const Navigation = () => {
 			{/* <!-- Header --> */}
 			<header className='pt2 pb1 align--center'>
 				<div className='container'>
-					<img src='./assets/RESIZED.png' alt=''></img>
+					<img src='./RESU_ME-01.png' alt=''></img>
 					<h1 title='Camp Chippewa'>
 						<span ref={textRef}></span>
 					</h1>
+					<button></button>
 				</div>
 			</header>
 		</div>
