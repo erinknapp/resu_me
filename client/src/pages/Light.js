@@ -110,24 +110,27 @@ const Pro = () => {
                     </div>
 
 
+             
+
+                       
                     <div contentEditable="true" className="col-sm-9 text-center" id="right">
 
-                        <div id="page" className="droid">
+<div id="page" className="droid">
 
-                            <div className="row" id="margin-botton10px">
-                                <div className="col-sm-12">
-                                    <div id="info" className="infoalign">
-                                        <p id="contentName" className="idfont">Abc xyz</p>
-                                    </div>
-                                    <div id="contact">
-                                        <p><input placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
-                                        <p id="margintop"><span id="contactLink2">Github://yourgithub  | </span>
-                                            <span id="contactLink1">Linkedln://yourlinkedin | </span>
-                                            <span id="contactlink5">CodeChef://yourcodechef | </span>
-                                            <span id="contactlink6">HackerRank://yourrank</span></p>
-                                    </div>
-                                </div>
-                            </div>
+    <div className="row" id="margin-botton10px">
+        <div className="col-sm-12">
+            <div id="info" className="infoalign">
+                <p id="contentName" className="idfont"><input id='Name' placeholder='Your Name'></input></p>
+            </div>
+            <div id="contact">
+                <p><input id="contactinput"  placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
+                <p id="margintop"><span id="contactLink2"><input id='github' placeholder='Github://yourgithub  |'></input></span>
+                    <span id="contactLink1"><input id='linkedin' placeholder='Linkedln://yourlinkedin |'></input> </span>
+                    <span id="contactlink5"><input id='codechef' placeholder='CodeChef://yourcodechef | '></input></span>
+                    <span id="contactlink6"><input id='hackerrank' placeholder='HackerRank://yourrank'></input></span></p>
+            </div>
+        </div>
+    </div>
 
 
                             <div className="section" id="sectionEducation">

@@ -4,7 +4,9 @@ import {
     changeListStyle,
     insertList,
     decreaseIndent,
-    increaseIndent
+    increaseIndent,
+    toggleSection
+
 } from '../main.js';
 import '../main.js'
 import '../bootstrap.min.css';
@@ -208,9 +210,9 @@ const Pro = () => {
                                     <div id="contact">
                                         <p><input id="contactinput"  placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
                                         <p id="margintop"><span id="contactLink2"><input id='github' placeholder='Github://yourgithub  |'></input></span>
-                                            <span id="contactLink1">Linkedln://yourlinkedin | </span>
-                                            <span id="contactlink5">CodeChef://yourcodechef | </span>
-                                            <span id="contactlink6">HackerRank://yourrank</span></p>
+                                            <span id="contactLink1"><input id='linkedin' placeholder='Linkedln://yourlinkedin |'></input> </span>
+                                            <span id="contactlink5"><input id='codechef' placeholder='CodeChef://yourcodechef | '></input></span>
+                                            <span id="contactlink6"><input id='hackerrank' placeholder='HackerRank://yourrank'></input></span></p>
                                     </div>
                                 </div>
                             </div>
