@@ -1,13 +1,13 @@
 import React from "react";
 import { template, changeListStyle, insertList, decreaseIndent, increaseIndent } from "../main.js";
 import "../main.js";
-import "../bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 import "../style.css";
 
 import "../main.js";
 // import $ from 'jquery';
 
-const Pro = () => {
+const Light = () => {
 	return (
 		<>
 			<div className='container-fluid'>
@@ -683,4 +683,4 @@ const Pro = () => {
 	);
 };
 
-export default Pro;
+export default Light;
