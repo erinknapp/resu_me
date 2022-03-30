@@ -15,7 +15,10 @@ input {
     border: none;
     font-size:1.3em; padding:.5em; 
 }
+#contactinput {
+width: 60%;
 
+}
 #left * {
     color: #eee;
     font-family: 'Montserrat', sans-serif;
