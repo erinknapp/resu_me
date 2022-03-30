@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+        @import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,700');
+            @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
+}
+.info-image:hover {
+    transform: scale(1.1);
 }
 
 body {
