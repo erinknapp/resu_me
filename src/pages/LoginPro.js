@@ -3,11 +3,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
-import "../homepage.css";
-
-import Auth from '../utils/auth';
-
-import "./Login.css";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
@@ -33,8 +28,8 @@ const Login = () => {
 					<Form.Label>Password</Form.Label>
 					<Form.Control type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
 				</Form.Group>
-				<Button block size='lg' type='submit' className='btn' disabled={!validateForm()} onClick={() => navigate("/light")}>
-					Sign Up / Login Resu_Me Lite
+				<Button block size='lg' type='submit' disabled={!validateForm()} onClick={() => navigate("/pro")}>
+					Sign Up / Login Resu_Me Pro
 				</Button>
 			</Form>
 		</div>

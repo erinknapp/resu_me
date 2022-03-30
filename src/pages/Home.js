@@ -16,16 +16,19 @@ const Home = () => {
 						{/* <!-- PRO --> */}
 						<div className='grid-column span-half pt3 pb3 mobile-m order-1'>
 							<div className='relative'>
-								<a href='/loginPro' target='_Blank'>
+								<a href='/pro' target='_Blank'>
 									<img className='info-image relative z2' src='assets/pro.png' alt='Cabin' />
 								</a>
 								<div className='pattern pattern--left-down absolute z1'></div>
 							</div>
 						</div>
 						<div className='grid-column span-half pt3 pb3 mobile-m order-2'>
+							<button className='btn' onClick={() => navigate("/loginPro")}>
+								Pro, Sign Up or Login Here
+							</button>
 							<a href='/pro' style={{ textDecoration: "none" }} target='_Blank'>
 								<h3>Resu_Me - Pro</h3>
-								<a href='https://buy.stripe.com/test_aEUeYX3AA0tU9bOeUU' target='_blank'>
+								<a href='https://buy.stripe.com/test_aEUeYX3AA0tU9bOeUU' target='_blank' rel='noreferrer'>
 									Donate To Resu_Me!
 								</a>
 							</a>
@@ -33,14 +36,17 @@ const Home = () => {
 						</div>
 						{/* <!-- LIGHT --> */}
 						<div className='grid-column span-half pt3 pb3 mobile-m order-4'>
+							<button className='btn' onClick={() => navigate("/loginLite")}>
+								Lite, Sign Up or Login Here
+							</button>
 							<a href='/light' style={{ textDecoration: "none" }} target='_Blank'>
-								<h3>Resu_Me - Light</h3>
+								<h3>Resu_Me - Lite</h3>
 							</a>
 							<p>Resu_Me - Light gives you a free, Simple and effective resume.</p>
 						</div>
 						<div className='grid-column span-half pt3 pb3 mobile-m order-3'>
 							<div className='relative'>
-								<a href='/loginLite'>
+								<a href='/light' target='_Blank'>
 									<img className='info-image relative z2' src='assets/light.png' alt='Teepee' />
 								</a>
 								<div className='pattern pattern--right-middle absolute z1'></div>
