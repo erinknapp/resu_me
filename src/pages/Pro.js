@@ -327,7 +327,7 @@ const Pro = () => {
 												<input id='linkedin' placeholder='Linkedln://yourlinkedin |'></input>{" "}
 											</span>
 											<span id='contactlink5'>
-												<input id='codechef' placeholder='CodeChef://yourcodechef | '></input>
+												<input id='emailInput' placeholder='Your@email.com |'></input>
 											</span>
 											<span id='contactlink6'>
 												<input id='hackerrank' placeholder='HackerRank://yourrank'></input>
