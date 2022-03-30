@@ -5,8 +5,7 @@ import { setContext } from "@apollo/client/link/context";
 import Home from "./pages/Home";
 import Pro from "./pages/Pro";
 import Light from "./pages/Light";
-import LoginPro from "./pages/LoginPro";
-import LoginLite from "./pages/LoginLite";
+import Login from "./components/Login";
 
 // ***************************//
 const httpLink = createHttpLink({
@@ -37,8 +36,7 @@ function App() {
 					<Route path='/' element={<Home />} />
 					<Route path='/pro' element={<Pro />} />
 					<Route path='/light' element={<Light />} />
-					<Route path='/loginPro' element={<LoginPro />} />
-					<Route path='/loginLite' element={<LoginLite />} />
+					<Route path='/login' element={<Login />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

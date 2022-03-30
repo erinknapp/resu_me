@@ -2,10 +2,8 @@ import React from "react";
 import "../homepage.css";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
-import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-	const navigate = useNavigate();
 	return (
 		<body>
 			<Navigation />
@@ -25,23 +23,23 @@ const Home = () => {
 							</div>
 						</div>
 						<div className='grid-column span-half pt3 pb3 mobile-m order-2'>
-							<button className='btn' onClick={() => navigate("/loginPro")}>
-								Pro, Sign Up or Login Here
-							</button>
-							<a href='/loginPro' style={{ textDecoration: "none" }}>
+							<a href='/pro' style={{ textDecoration: "none" }} target='_Blank'>
 								<h3>Resu_Me - Pro</h3>
+<<<<<<< HEAD
+=======
+								<a href='https://buy.stripe.com/test_aEUeYX3AA0tU9bOeUU' target='_blank'>
+									Donate To Resu_Me!
+								</a>
+>>>>>>> d9484b93779a2c75a4a273709592c08195b4f03e
 							</a>
 							<p>Resu_Me - Pro gives you a Premium, modern, professional resume.</p>
 						</div>
 						{/* <!-- LIGHT --> */}
 						<div className='grid-column span-half pt3 pb3 mobile-m order-4'>
-							<button className='btn' onClick={() => navigate("/loginLite")}>
-								Lite, Sign Up or Login Here
-							</button>
-							<a href='/loginLite' style={{ textDecoration: "none" }}>
-								<h3>Resu_Me - Lite</h3>
+							<a href='/light' style={{ textDecoration: "none" }} target='_Blank'>
+								<h3>Resu_Me - Light</h3>
 							</a>
-							<p>Resu_Me - Lite gives you a free, Simple and effective resume.</p>
+							<p>Resu_Me - Light gives you a free, Simple and effective resume.</p>
 						</div>
 						<div className='grid-column span-half pt3 pb3 mobile-m order-3'>
 							<div className='relative'>
