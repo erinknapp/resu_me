@@ -492,7 +492,8 @@ img::-moz-selection {
 	background: 0 0;
 }
 
-.btn {
+.btn,
+Button {
 	background-image: none;
 	border-radius: 0;
 	border-style: solid;
@@ -592,6 +593,17 @@ fieldset[disabled] a.btn {
 .btn--outline:visited:active {
 	background-color: #2d2b31;
 	border-color: #2d2b31;
+}
+
+.loginBtn {
+	display: flex;
+	justify-content: center;
+}
+
+.loginLogo {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
 }
 
 .container {
