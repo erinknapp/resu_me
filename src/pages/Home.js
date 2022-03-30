@@ -30,9 +30,6 @@ const Home = () => {
 							</button>
 							<a href='/loginPro' style={{ textDecoration: "none" }}>
 								<h3>Resu_Me - Pro</h3>
-								<a href='https://buy.stripe.com/test_aEUeYX3AA0tU9bOeUU' rel='noreferrer'>
-									Donate To Resu_Me!
-								</a>
 							</a>
 							<p>Resu_Me - Pro gives you a Premium, modern, professional resume.</p>
 						</div>

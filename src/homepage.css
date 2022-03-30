@@ -1684,6 +1684,16 @@ hr {
 	clear: both;
 }
 
+footer {
+	margin-top: 5em;
+	font-size: xx-large;
+}
+
+footer p {
+	font-size: x-large;
+	padding-top: 50px;
+}
+
 @media screen and (min-width: 40em) {
 	html {
 		font-size: 23px;
