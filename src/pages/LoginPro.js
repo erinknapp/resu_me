@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
+import "../homepage.css";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
@@ -19,6 +19,9 @@ const Login = () => {
 
 	return (
 		<div className='Login'>
+			<div className='loginLogo'>
+				<img src='./assets/RESIZED.png' alt=''></img>
+			</div>
 			<Form onSubmit={handleSubmit}>
 				<Form.Group size='lg' controlId='email'>
 					<Form.Label>Email</Form.Label>
@@ -28,9 +31,9 @@ const Login = () => {
 					<Form.Label>Password</Form.Label>
 					<Form.Control type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
 				</Form.Group>
-				<Button block size='lg' type='submit' disabled={!validateForm()} onClick={() => navigate("/pro")}>
+				<button block size='lg' className='btn loginBtn' type='submit' disabled={!validateForm()} onClick={() => navigate("/pro")}>
 					Sign Up / Login Resu_Me Pro
-				</Button>
+				</button>
 			</Form>
 		</div>
 	);

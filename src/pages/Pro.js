@@ -13,9 +13,12 @@ const Pro = () => {
 				<div className='row'>
 					<div className='col-sm-3 no-print' id='left'>
 						<div id='panel'>
-							<h3 className='text-center' data-toggle='modal'>
+							<div className='loginLogo'>
+								<img src='./assets/ProLogo.png' alt=''></img>
+							</div>
+							{/* <h3 className='text-center' data-toggle='modal'>
 								Resu_Me
-							</h3>
+							</h3> */}
 							{/* <!--   <button className="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button> --> */}
 							<button className='btn btn-block btn-success' onClick={() => window.print()}>
 								CREATE PDF
