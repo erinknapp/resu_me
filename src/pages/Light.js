@@ -15,7 +15,7 @@ const Pro = () => {
 					<div className='col-sm-3 no-print' id='left'>
 						<div id='panel'>
 							<h3 className='text-center' data-toggle='modal'>
-								Resu_me
+								Resu_Me
 							</h3>
 							{/* <!--   <button className="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button> --> */}
 							<button className='btn btn-block btn-success' onClick={() => window.print()}>
@@ -26,7 +26,7 @@ const Pro = () => {
 
 							<h4 className='text-center'>input</h4>
 							<button id='defaultTemplateBtn' className='btn btn-block btn-danger' onClick={() => template("default")}>
-								Use Resu_me² template
+								Use Resu_Me template
 							</button>
 							<h5>
 								Semester
@@ -232,8 +232,8 @@ const Pro = () => {
 											</tbody>
 											<tbody>
 												<tr>
-													<td>year - Present</td>
-													<td>Couse/Degree</td>
+													<td>Year - Present</td>
+													<td>Course/Degree</td>
 													<td>University/College/School</td>
 													<td>GPA</td>
 												</tr>
@@ -241,7 +241,7 @@ const Pro = () => {
 											<tbody>
 												<tr>
 													<td>Year</td>
-													<td>Couse/Degree/Certification</td>
+													<td>Course/Degree/Certification</td>
 													<td>University/College/School</td>
 													<td>Grade</td>
 												</tr>
@@ -249,7 +249,7 @@ const Pro = () => {
 											<tbody>
 												<tr>
 													<td>Year</td>
-													<td>Couse/Degree/Certification</td>
+													<td>Course/Degree/Certification</td>
 													<td>University/College/School</td>
 													<td>Grade/GPA</td>
 												</tr>
@@ -284,7 +284,7 @@ const Pro = () => {
 											<div className='time right'>Start Date - End Date / (Present)</div>
 										</div>
 										<div>
-											<div className='link right'>www.business.wesite.com</div>
+											<div className='link right'>www.business.website.com</div>
 											<div className='text'>Description of role.</div>
 										</div>
 									</li>
@@ -332,7 +332,7 @@ const Pro = () => {
 								<ul>
 									<li>
 										<div>
-											<div className='title'>Project title</div>
+											<div className='title'>Project Title</div>
 											<div className='time right'>Ongoing</div>
 										</div>
 										<div>
@@ -344,7 +344,7 @@ const Pro = () => {
 									</li>
 									<li>
 										<div>
-											<div className='title'>Project title</div>
+											<div className='title'>Project Title</div>
 											<div className='time right'>Apr 2016</div>
 										</div>
 										<div>
@@ -357,7 +357,7 @@ const Pro = () => {
 									</li>
 									<li>
 										<div>
-											<div className='title'>Project title</div>
+											<div className='title'>Project Title</div>
 											<div className='time right'>Jan 2016 - Mar 2016</div>
 										</div>
 										<div>
@@ -370,7 +370,7 @@ const Pro = () => {
 									</li>
 									<li>
 										<div>
-											<div className='title'>Project title</div>
+											<div className='title'>Project Title</div>
 											<div className='time right'>Feb 2016</div>
 										</div>
 										<div>
@@ -382,7 +382,7 @@ const Pro = () => {
 									</li>
 									<li>
 										<div>
-											<div className='title'>Project title</div>
+											<div className='title'>Project Title</div>
 											<div className='time right'>Nov 2015</div>
 										</div>
 										<div>
@@ -395,7 +395,7 @@ const Pro = () => {
 									</li>
 									<li>
 										<div>
-											<div className='title'>Project title</div>
+											<div className='title'>Project Title</div>
 											<div className='time right'>Aug 2015 - Sep 2015</div>
 										</div>
 										<div>
@@ -416,21 +416,21 @@ const Pro = () => {
 								<ul>
 									<li>
 										<strong>
-											<span className='skillCategory'>Programming languages</span> :
+											<span className='skillCategory'>Programming Languages</span> :
 										</strong>{" "}
 										C++, Python, Java *
 									</li>
 									<li>
 										<strong>
-											<span className='skillCategory'>Web technologies</span> :
+											<span className='skillCategory'>Web Technologies</span> :
 										</strong>{" "}
-										HTML, CSS, Javascript
+										HTML, CSS, JavaScript
 									</li>
 									<li>
 										<strong>
-											<span className='skillCategory'>Database management</span> :
+											<span className='skillCategory'>Database Management</span> :
 										</strong>{" "}
-										mySQL
+										MySQL
 									</li>
 									<li>
 										<strong>
@@ -440,13 +440,13 @@ const Pro = () => {
 									</li>
 									<li>
 										<strong>
-											<span className='skillCategory'>Operating system</span> :
+											<span className='skillCategory'>Operating System</span> :
 										</strong>{" "}
 										Windows, Linux
 									</li>
 									<div className='star'>
 										<i>
-											*<span className='light'> Elementary proficiency</span>
+											*<span className='light'> Elementary Proficiency</span>
 										</i>
 									</div>
 								</ul>
