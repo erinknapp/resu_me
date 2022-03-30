@@ -6,7 +6,7 @@ import Navigation from '../components/Navigation';
 const Home = () => {
 
     return (
-        <div>
+        <body>
             <Navigation />
             {/* <!-- Body --> */}
             <main>
@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
             </main>
             <Footer />
-        </div>
+        </body>
     );
 }
 

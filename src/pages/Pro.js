@@ -9,9 +9,10 @@ import {
 import '../main.js'
 import '../bootstrap.min.css';
 import '../style.css';
-
 import '../main.js';
-import $ from 'jquery';
+
+
+
 
 const Pro = () => {
     return (
@@ -202,11 +203,11 @@ const Pro = () => {
                             <div className="row" id="margin-botton10px">
                                 <div className="col-sm-12">
                                     <div id="info" className="infoalign">
-                                        <p id="contentName" className="idfont">Abc xyz</p>
+                                        <p id="contentName" className="idfont"><input id='Name' placeholder='Your Name'></input></p>
                                     </div>
                                     <div id="contact">
-                                        <p><input id="conteactinput" onkeyup="this.style.width = ((this.value.length + 1) * 5) + 'px';console.log(this.value.length);"  ng-model="questionButtons[$index].title" placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
-                                        <p id="margintop"><span id="contactLink2"><input id='github' placeholder='Github://yourgithub  |'></input>  </span>
+                                        <p><input id="contactinput"  placeholder="Your@email.com | (123)456-7890 | your.website.com"></input></p>
+                                        <p id="margintop"><span id="contactLink2"><input id='github' placeholder='Github://yourgithub  |'></input></span>
                                             <span id="contactLink1">Linkedln://yourlinkedin | </span>
                                             <span id="contactlink5">CodeChef://yourcodechef | </span>
                                             <span id="contactlink6">HackerRank://yourrank</span></p>
@@ -603,5 +604,6 @@ const Pro = () => {
 
     );
 }
+
 
 export default Pro;
