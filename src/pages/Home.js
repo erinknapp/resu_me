@@ -25,12 +25,9 @@ const Home = () => {
 						<div className='grid-column span-half pt3 pb3 mobile-m order-2'>
 							<a href='/pro' style={{ textDecoration: "none" }} target='_Blank'>
 								<h3>Resu_Me - Pro</h3>
-<<<<<<< HEAD
-=======
-								<a href='https://buy.stripe.com/test_aEUeYX3AA0tU9bOeUU' target='_blank'>
+								<a href='https://buy.stripe.com/test_aEUeYX3AA0tU9bOeUU' target='_blank' rel='noreferrer'>
 									Donate To Resu_Me!
 								</a>
->>>>>>> d9484b93779a2c75a4a273709592c08195b4f03e
 							</a>
 							<p>Resu_Me - Pro gives you a Premium, modern, professional resume.</p>
 						</div>
