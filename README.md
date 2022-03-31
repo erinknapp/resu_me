@@ -26,6 +26,8 @@
 </p>
 
 ----
+![resu_meHomeCapture](https://user-images.githubusercontent.com/87203701/160955730-8b9c2526-3552-4e3c-b3e5-4d8a5c06d1bf.PNG)
+
 
 ## Technologies & MERN development stack
 - MongoDB
