@@ -42,4 +42,7 @@
     - jwt-decode
     - jsonwebtoken
 -----
+
+## Deployed at: <a href="https://resu-me2.herokuapp.com/">https://resu-me2.herokuapp.com/</a>
+-----
 Created by: <a href="https://github.com/gr4ham18">Gabriel Graham</a>, <a href="https://github.com/erinknapp">Erin Knapp</a>, and <a href="https://github.com/cboensch6505">Corey Boensch</a>  &copy; 2022
