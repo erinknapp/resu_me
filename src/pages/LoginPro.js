@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
+import "../homepage.css";
+import Footer from "../components/Footer";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
@@ -19,6 +21,7 @@ const Login = () => {
 	return (
 		<div className='Login'>
 			<Form onSubmit={handleSubmit}>
+				<img className='loginLogo' src='assets/ProLoginBlk.png' alt=''></img>
 				<Form.Group size='lg' controlId='email'>
 					<Form.Label>Email</Form.Label>
 					<Form.Control autoFocus type='email' value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -27,10 +30,11 @@ const Login = () => {
 					<Form.Label>Password</Form.Label>
 					<Form.Control type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
 				</Form.Group>
-				<button block size='lg' type='submit' className='btn' disabled={!validateForm()} onClick={() => navigate("/pro")}>
-					Sign Up / Login Resu_Me Pro
+				<button block size='lg' type='submit' className='btn loginBtn' disabled={!validateForm()} onClick={() => navigate("/pro")}>
+					** Sign Up or Login * Resu_Me Pro **
 				</button>
 			</Form>
+			<Footer />
 		</div>
 	);
 };

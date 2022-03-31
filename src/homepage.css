@@ -1682,6 +1682,17 @@ footer p {
 	padding-top: 50px;
 }
 
+.loginBtn {
+	display: flex;
+	justify-content: center;
+}
+
+img .loginLogo {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+}
+
 @media screen and (min-width: 40em) {
 	html {
 		font-size: 23px;

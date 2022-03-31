@@ -19,7 +19,7 @@ const Home = () => {
 						{/* <!-- PRO --> */}
 						<div className='grid-column span-half pt3 pb3 mobile-m order-1'>
 							<div className='relative'>
-								<a href='/pro' target='_Blank'>
+								<a href='/loginPro'>
 									<img className='info-image relative z2' src='assets/pro.png' alt='Cabin' />
 								</a>
 								<div className='pattern pattern--left-down absolute z1'></div>
@@ -29,7 +29,7 @@ const Home = () => {
 							<button className='btn' onClick={() => navigate("/loginPro")}>
 								Pro, Sign Up or Login Here
 							</button>
-							<a href='/pro' style={{ textDecoration: "none" }} target='_Blank'>
+							<a href='/loginPro' style={{ textDecoration: "none" }}>
 								<h3>Resu_Me - Pro</h3>
 							</a>
 							<p>Resu_Me - Pro gives you a Premium, modern, professional resume.</p>
@@ -39,14 +39,14 @@ const Home = () => {
 							<button className='btn' onClick={() => navigate("/loginLite")}>
 								Lite, Sign Up or Login Here
 							</button>
-							<a href='/light' style={{ textDecoration: "none" }} target='_Blank'>
+							<a href='/loginLite' style={{ textDecoration: "none" }}>
 								<h3>Resu_Me - Lite</h3>
 							</a>
 							<p>Resu_Me - Light gives you a free, Simple and effective resume.</p>
 						</div>
 						<div className='grid-column span-half pt3 pb3 mobile-m order-3'>
 							<div className='relative'>
-								<a href='/light' target='_Blank'>
+								<a href='/loginLite'>
 									<img className='info-image relative z2' src='assets/light.png' alt='Teepee' />
 								</a>
 								<div className='pattern pattern--right-middle absolute z1'></div>

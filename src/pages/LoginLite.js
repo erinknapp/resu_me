@@ -4,6 +4,7 @@ import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import "../homepage.css";
 import "./Login.css";
+import Footer from "../components/Footer";
 
 const Login = () => {
 	const [email, setEmail] = useState("");
@@ -21,6 +22,7 @@ const Login = () => {
 	return (
 		<div className='Login'>
 			<Form onSubmit={handleSubmit}>
+				<img className='loginLogo' src='assets/LiteLoginBlk.png' alt=''></img>
 				<Form.Group size='lg' controlId='email'>
 					<Form.Label>Email</Form.Label>
 					<Form.Control autoFocus type='email' value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -30,9 +32,10 @@ const Login = () => {
 					<Form.Control type='password' value={password} onChange={(e) => setPassword(e.target.value)} />
 				</Form.Group>
 				<button block size='lg' type='submit' className='btn' disabled={!validateForm()} onClick={() => navigate("/light")}>
-					Sign Up / Login Resu_Me Lite
+					** Sign Up or Login * Resu_Me Lite **
 				</button>
 			</Form>
+			<Footer />
 		</div>
 	);
 };

@@ -14,9 +14,11 @@ const Light = () => {
 				<div className='row'>
 					<div className='col-sm-3 no-print' id='left'>
 						<div id='panel'>
-							<h3 className='text-center' data-toggle='modal'>
+							<img className='btn loginLogo' src='assets/LiteLogoWht.png' alt=''></img>
+
+							{/* <h3 className='text-center' data-toggle='modal'>
 								Resu_Me
-							</h3>
+							</h3> */}
 							{/* <!--   <button className="btn btn-block btn-primary" data-toggle="modal" data-target="#usageModal">VIEW INSTRUCTIONS</button> --> */}
 							<button className='btn btn-block btn-success' onClick={() => window.print()}>
 								CREATE PDF
@@ -24,7 +26,7 @@ const Light = () => {
 
 							<hr />
 
-							<h4 className='text-center'>input</h4>
+							<h4 className='text-center'>↓↓↓ Future Features ↓↓↓</h4>
 							<button id='defaultTemplateBtn' className='btn btn-block btn-danger' onClick={() => template("default")}>
 								Use Resu_Me template
 							</button>
@@ -124,6 +126,7 @@ const Light = () => {
 									Show/Hide sections
 								</button>
 							</h5>
+							<h4 className='text-center'>↑↑↑ Future Features ↑↑↑</h4>
 
 							<hr />
 
